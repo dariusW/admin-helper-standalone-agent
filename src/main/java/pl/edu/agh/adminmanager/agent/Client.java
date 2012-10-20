@@ -12,6 +12,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.log4j.Logger;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ import org.springframework.stereotype.Component;
 
 @Component("client")
 public class Client {
+
+	private static Logger log = Logger.getLogger(Client.class.getName());
 
 	@Autowired
 	private ContextController context;
@@ -37,8 +40,6 @@ public class Client {
 
 	@PostConstruct
 	public void init() {
-		System.out.println("Initiallize Client");
-
 		hostUrl = context.getProperty("host");
 		userName = context.getProperty("user");
 
@@ -60,8 +61,6 @@ public class Client {
 		} catch (JSONException e1) {
 			e1.printStackTrace();
 		}
-
-		System.out.println("Client Ready");
 	}
 
 	public void sendPost(final String path, final Object content,
@@ -74,7 +73,7 @@ public class Client {
 			url = "http://" + hostUrl + "/" + path;
 
 		if (context.isDebug())
-			System.out.println("POST REQUEST: "+url+" CONTENT: "
+			log.info("POST REQUEST: " + url + " CONTENT: "
 					+ (content != null ? content : "NULL"));
 		else
 

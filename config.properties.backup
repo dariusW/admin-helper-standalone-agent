@@ -1,0 +1,6 @@
+host=localhost:3030
+user=panpokemon
+debug=true
+
+hdd.space.monitor=true
+hdd.space.monitor.period=10000
