@@ -1,31 +1,31 @@
 package pl.edu.agh.adminmanager.monitor.hdd;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-import javax.annotation.PostConstruct;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import pl.edu.agh.adminmanager.agent.Client.PostCallback;
+import pl.edu.agh.adminmanager.jsonObect.ReportData;
+import pl.edu.agh.adminmanager.jsonObect.ReportDataList;
+import pl.edu.agh.adminmanager.jsonObect.ReportResponce;
 import pl.edu.agh.adminmanager.monitor.BaseMonitor;
 
 @Component
 public class HddSpaceMonitor extends BaseMonitor {
+	
+
+	private static Logger log = Logger.getLogger(ReportResponce.class.getName());
 
 	// don't use if not necessary
-	@PostConstruct
 	@Override
 	public void init() {
 		setResponceCallback(new PostCallback() {
 
-			public void handle(JSONObject json) {
-				// handle server response here
+			public void handle(String json) {
+				ReportResponce responce = fromJson(json, ReportResponce.class);
+				log.info(responce);		
 			}
 		});
 		// important to register monitor
@@ -47,34 +47,22 @@ public class HddSpaceMonitor extends BaseMonitor {
 	 * @return JSONArray || JSONObject with data
 	 */
 	@Override
-	public Object execute() {
+	public ReportDataList execute() {
 
-		List<JSONObject> list = new ArrayList<JSONObject>();
+		ReportDataList list = new ReportDataList();
 		for (File root : Arrays.asList(File.listRoots())) {
-			JSONObject item = new JSONObject();
-			try {
-				item.append("time", System.currentTimeMillis() / 1000L);
-				JSONObject data = new JSONObject();
-				data.append("drive", root.toString());
-				data.append("free_space", root.getFreeSpace());
-				data.append("total_space", root.getTotalSpace());
-				data.append("usable_space", root.getUsableSpace());
-				item.append("data", data);
-				list.add(item);
-			} catch (JSONException e) {
-				// TODO: handle exception
-				e.printStackTrace();
-			}
-		}
-		JSONObject toSend = new JSONObject();
-		try {
-			JSONArray jsonList = new JSONArray(list);
-			toSend.append("lista", jsonList);
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return toSend;
-	}
+			ReportData item = new ReportData();
+			item.setTable("hdd_space");
+			item.getData().put("drive", root.toString());
+			item.getData()
+					.put("free_space", Long.toString(root.getFreeSpace()));
+			item.getData().put("total_space",
+					Long.toString(root.getTotalSpace()));
+			item.getData().put("usable_space",
+					Long.toString(root.getUsableSpace()));
+			list.getList().add(item);
 
+		}
+		return list;
+	}
 }

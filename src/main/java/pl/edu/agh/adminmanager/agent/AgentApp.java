@@ -15,8 +15,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -58,7 +56,7 @@ public class AgentApp {
 	private JScrollPane scrollPanel;
 
 	private JPanel scrollContentPanel;
-	
+
 	private Map<JLabel, JTextField> map;
 
 	/**
@@ -142,8 +140,8 @@ public class AgentApp {
 
 				public void actionPerformed(ActionEvent e) {
 					if (e.getSource() == save) {
-						Properties p = contextController.getConfigProperties(); 
-						for(JLabel key: map.keySet()){
+						Properties p = contextController.getConfigProperties();
+						for (JLabel key : map.keySet()) {
 							String keyValue = key.getText();
 							String valueValue = map.get(key).getText();
 							p.setProperty(keyValue, valueValue);
@@ -151,15 +149,18 @@ public class AgentApp {
 
 						// TODO: handle save new config
 						try {
-							OutputStream propertyOut = new FileOutputStream("config.properties");
-							p.store(propertyOut, "Backup config stroed in config.properties.backup");
+							OutputStream propertyOut = new FileOutputStream(
+									"config.properties");
+							p.store(propertyOut,
+									"Backup config stroed in config.properties.backup");
 						} catch (FileNotFoundException e1) {
 							log.error(e);
 						} catch (IOException e1) {
-							log.error("Prooperty save error: "+e1);
+							log.error("Prooperty save error: " + e1);
 						}
-						
-						JOptionPane.showMessageDialog(configFrame, "You need to restarft application");
+
+						JOptionPane.showMessageDialog(configFrame,
+								"You need to restarft application");
 						configFrame.setVisible(false);
 
 					} else if (e.getSource() == cancel) {
@@ -182,7 +183,7 @@ public class AgentApp {
 			scrollPanel = new JScrollPane(scrollContentPanel);
 			configFrame.add(panel, BorderLayout.SOUTH);
 			configFrame.add(scrollPanel, BorderLayout.CENTER);
-			
+
 			map = new HashMap<JLabel, JTextField>();
 		}
 

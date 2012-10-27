@@ -9,7 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import pl.edu.agh.adminmanager.agent.Client;
 import pl.edu.agh.adminmanager.agent.ContextController;
+import pl.edu.agh.adminmanager.jsonObect.JsonData;
 
+import com.google.gson.Gson;
+
+@SuppressWarnings("restriction")
 public abstract class BaseMonitor {
 	
 	@Autowired 
@@ -23,7 +27,9 @@ public abstract class BaseMonitor {
 	
 	private Client.PostCallback responceCallback = null;
 	
-	public abstract Object execute();
+	private final Gson jsonParser = new Gson();
+	
+	public abstract JsonData execute();
 	
 	public BaseMonitor(){
 		
@@ -78,4 +84,17 @@ public abstract class BaseMonitor {
 	public void setResponceCallback(Client.PostCallback responceCallback) {
 		this.responceCallback = responceCallback;
 	}
+
+	public String toJson(Object src){
+		return getJsonParser().toJson(src);
+	}
+	
+	public <T> T fromJson(String src, Class<T> classOfT){
+		return getJsonParser().fromJson(src, classOfT);
+	}
+
+	public Gson getJsonParser() {
+		return jsonParser;
+	}
+
 }

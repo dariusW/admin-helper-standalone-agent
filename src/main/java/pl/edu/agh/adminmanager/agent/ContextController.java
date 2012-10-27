@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 
 import pl.edu.agh.adminmanager.monitor.BaseMonitor;
 
+@SuppressWarnings("restriction")
 @Component("contextController")
 public class ContextController {
 

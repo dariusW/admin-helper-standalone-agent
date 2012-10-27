@@ -13,11 +13,16 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.log4j.Logger;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import pl.edu.agh.adminmanager.jsonObect.JsonData;
+import pl.edu.agh.adminmanager.jsonObect.Login;
+import pl.edu.agh.adminmanager.jsonObect.LoginResponce;
+
+import com.google.gson.Gson;
+
+@SuppressWarnings("restriction")
 @Component("client")
 public class Client {
 
@@ -34,47 +39,60 @@ public class Client {
 
 	private String sensorKey;
 
+	private String userKey;
+
 	private static final String USER_REQ = "user";
 
 	public static final String STORE_REQ = "store";
+
+	private final Gson jsonParser = new Gson();
 
 	@PostConstruct
 	public void init() {
 		hostUrl = context.getProperty("host");
 		userName = context.getProperty("user");
 
-		try {
-			JSONObject content = new JSONObject();
-			content.append("nickname", userName);
-			sendPost(USER_REQ, content, new PostCallback() {
+		Login content = new Login();
+		content.setNickname(userName);
 
-				public void handle(JSONObject json) {
-					try {
-						sensorKey = json.getString("sensor_key");
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
+		sendPost(USER_REQ, content, new PostCallback() {
 
+			public void handle(String json) {
+				LoginResponce responce = jsonParser.fromJson(json,
+						LoginResponce.class);
+				
+				if(responce.getError()!=null){
+					log.error(responce.getError());
+					return;
 				}
-			}, false);
+				
+				setSensorKey(responce.getSensorKey());
+				setUserKey(responce.getUserKey());
+			}
+		}, false);
 
-		} catch (JSONException e1) {
-			e1.printStackTrace();
-		}
 	}
 
-	public void sendPost(final String path, final Object content,
+	public String toJson(JsonData src) {
+		return getJsonParser().toJson(src);
+	}
+
+	public Gson getJsonParser() {
+		return jsonParser;
+	}
+
+	public void sendPost(final String path, final JsonData content,
 			final PostCallback responceCallback, final boolean sign) {
 		final String url;
 
 		if (sign)
-			url = "http://" + hostUrl + "/" + path + "?key=" + sensorKey;
+			url = "http://" + hostUrl + "/" + path + "?key=" + getSensorKey();
 		else
 			url = "http://" + hostUrl + "/" + path;
 
 		if (context.isDebug())
 			log.info("POST REQUEST: " + url + " CONTENT: "
-					+ (content != null ? content : "NULL"));
+					+ (content != null ? toJson(content) : "NULL"));
 		else
 
 			context.runTask(new Runnable() {
@@ -101,30 +119,43 @@ public class Client {
 						if (responceCallback != null) {
 							BufferedInputStream buffer = new BufferedInputStream(
 									postResponce.getEntity().getContent());
-							responceCallback.handle(new JSONObject(buffer
-									.toString()));
+							responceCallback.handle(buffer.toString());
 						}
 
 					} catch (UnsupportedEncodingException e) {
-						e.printStackTrace();
+						log.error(e);
 					} catch (ClientProtocolException e) {
 						// TODO Auto-generated catch block
-						e.printStackTrace();
+						log.error(e);
+						//System.out.println("Connection to "+url+" refused");
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (JSONException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+						log.error(e);
+					} 
 
 				}
 			});
 
 	}
 
+	public String getUserKey() {
+		return userKey;
+	}
+
+	public void setUserKey(String userKey) {
+		this.userKey = userKey;
+	}
+
+	public String getSensorKey() {
+		return sensorKey;
+	}
+
+	public void setSensorKey(String sensorKey) {
+		this.sensorKey = sensorKey;
+	}
+
 	public interface PostCallback {
 
-		public void handle(JSONObject json);
+		public void handle(String json);
 	}
 }
