@@ -1,10 +1,13 @@
 package pl.edu.agh.adminmanager.jsonObect;
 
+import java.lang.reflect.Modifier;
+
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class JsonData {
 	
-	private Gson gson = new Gson();
+	private static Gson gson = (new GsonBuilder()).excludeFieldsWithModifiers(Modifier.STATIC).create();
 	
 	@Override
 	public String toString() {

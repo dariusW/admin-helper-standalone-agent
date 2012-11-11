@@ -1,7 +1,8 @@
 package pl.edu.agh.adminmanager.agent;
 
-import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
 import javax.annotation.PostConstruct;
@@ -31,7 +32,7 @@ public class Client {
 	@Autowired
 	private ContextController context;
 
-	private HttpClient client = new DefaultHttpClient();
+	private HttpClient client;
 
 	private String hostUrl;
 
@@ -40,6 +41,8 @@ public class Client {
 	private String sensorKey;
 
 	private String userKey;
+
+	private boolean authorize;
 
 	private static final String USER_REQ = "user";
 
@@ -51,6 +54,10 @@ public class Client {
 	public void init() {
 		hostUrl = context.getProperty("host");
 		userName = context.getProperty("user");
+		authorize = Boolean.parseBoolean(context.getProperty("authorize"));
+
+		if (!authorize)
+			return;
 
 		Login content = new Login();
 		content.setNickname(userName);
@@ -60,12 +67,12 @@ public class Client {
 			public void handle(String json) {
 				LoginResponce responce = jsonParser.fromJson(json,
 						LoginResponce.class);
-				
-				if(responce.getError()!=null){
+
+				if (responce.getError() != null) {
 					log.error(responce.getError());
 					return;
 				}
-				
+
 				setSensorKey(responce.getSensorKey());
 				setUserKey(responce.getUserKey());
 			}
@@ -98,6 +105,7 @@ public class Client {
 			context.runTask(new Runnable() {
 
 				public void run() {
+					client = new DefaultHttpClient();
 					HttpPost postRequest;
 					postRequest = new HttpPost(url);
 
@@ -108,18 +116,24 @@ public class Client {
 						postRequest.setEntity(post);
 
 						HttpResponse postResponce = client.execute(postRequest);
+						
+						if (postResponce.getStatusLine().getStatusCode() < 200 || postResponce.getStatusLine().getStatusCode() > 200) {
+							log.error("Failed : HTTP error code : "
+									+ postResponce.getStatusLine()
+											.getStatusCode()+ " => "+ postResponce);
+							
+						} else {
 
-						if (postResponce.getStatusLine().getStatusCode() != 201) {
-							throw new RuntimeException(
-									"Failed : HTTP error code : "
-											+ postResponce.getStatusLine()
-													.getStatusCode());
-						}
-
-						if (responceCallback != null) {
-							BufferedInputStream buffer = new BufferedInputStream(
-									postResponce.getEntity().getContent());
-							responceCallback.handle(buffer.toString());
+							if (responceCallback != null) {
+								String json = "";
+								String line;
+								BufferedReader buffer = new BufferedReader(new InputStreamReader(
+										postResponce.getEntity().getContent()));
+								while ((line = buffer.readLine()) != null) {
+									json+=line;
+								}
+								responceCallback.handle(json);
+							}
 						}
 
 					} catch (UnsupportedEncodingException e) {
@@ -127,11 +141,12 @@ public class Client {
 					} catch (ClientProtocolException e) {
 						// TODO Auto-generated catch block
 						log.error(e);
-						//System.out.println("Connection to "+url+" refused");
+						// System.out.println("Connection to "+url+" refused");
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						log.error(e);
-					} 
+					}
+					client.getConnectionManager().shutdown();
 
 				}
 			});

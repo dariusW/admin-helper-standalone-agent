@@ -1,12 +1,17 @@
 package pl.edu.agh.adminmanager.agent;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Properties;
 
 import javax.annotation.PostConstruct;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.task.TaskExecutor;
@@ -18,6 +23,8 @@ import pl.edu.agh.adminmanager.monitor.BaseMonitor;
 @SuppressWarnings("restriction")
 @Component("contextController")
 public class ContextController {
+	private static Logger log = Logger.getLogger(ContextController.class
+			.getName());
 
 	@Autowired
 	private TaskExecutor taskExecutor;
@@ -48,16 +55,37 @@ public class ContextController {
 		config = new Properties();
 		try {
 			InputStream s = new FileInputStream("config.properties");
-//					getClass().getResourceAsStream(
-//					"/config/config.properties");
 			config.load(s);
 
 			s.close();
-			debug = Boolean.parseBoolean(getProperty("debug"));
+		} catch (FileNotFoundException e) {
+			OutputStream newConfig;
+			try {
+				newConfig = new FileOutputStream(new File(
+						"config.properties"));
+				InputStream backupConfig = getClass().getResourceAsStream(
+						"/config/config.properties");
+				byte[] buf = new byte[1024];
+				int len;
+				while ((len = backupConfig.read(buf)) > 0){
+					newConfig.write(buf, 0, len);
+				}
+				newConfig.close();
+				backupConfig.close();
+				InputStream s = new FileInputStream("config.properties");
+				config.load(s);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				log.error("FATAL ERROR " + e1);
+				System.exit(0);
+			}
+
 		} catch (IOException e) {
 			// TODO: add kill on properties error
-			e.printStackTrace();
+			log.error("FATAL ERROR"+e);
+			System.exit(0);
 		}
+		debug = Boolean.parseBoolean(getProperty("debug"));
 
 	}
 
@@ -95,7 +123,7 @@ public class ContextController {
 		return debug;
 	}
 
-	Properties getConfigProperties(){
+	Properties getConfigProperties() {
 		return config;
 	}
 }

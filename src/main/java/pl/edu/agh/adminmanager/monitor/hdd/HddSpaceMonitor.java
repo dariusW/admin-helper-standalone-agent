@@ -53,7 +53,7 @@ public class HddSpaceMonitor extends BaseMonitor {
 		for (File root : Arrays.asList(File.listRoots())) {
 			ReportData item = new ReportData();
 			item.setTable("hdd_space");
-			item.getData().put("drive", root.toString());
+			item.getData().put("drive", root.toString().replace("\\", ""));
 			item.getData()
 					.put("free_space", Long.toString(root.getFreeSpace()));
 			item.getData().put("total_space",
