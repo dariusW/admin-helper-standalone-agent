@@ -1,0 +1,5 @@
+C:\Users\Darek\Documents\Visual Studio 2010\AH\DiskSmart\DiskSmart\bin\Debug\DiskSmart.exe
+C:\Users\Darek\Documents\Visual Studio 2010\AH\DiskSmart\DiskSmart\bin\Debug\DiskSmart.pdb
+C:\Users\Darek\Documents\Visual Studio 2010\AH\DiskSmart\DiskSmart\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Darek\Documents\Visual Studio 2010\AH\DiskSmart\DiskSmart\obj\x86\Debug\DiskSmart.exe
+C:\Users\Darek\Documents\Visual Studio 2010\AH\DiskSmart\DiskSmart\obj\x86\Debug\DiskSmart.pdb

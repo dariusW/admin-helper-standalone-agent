@@ -1,0 +1,5 @@
+c:\users\darek\documents\visual studio 2010\AH\UsageSummary\UsageSummary\bin\Debug\UsageSummary.exe
+c:\users\darek\documents\visual studio 2010\AH\UsageSummary\UsageSummary\bin\Debug\UsageSummary.pdb
+c:\users\darek\documents\visual studio 2010\AH\UsageSummary\UsageSummary\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\darek\documents\visual studio 2010\AH\UsageSummary\UsageSummary\obj\x86\Debug\UsageSummary.exe
+c:\users\darek\documents\visual studio 2010\AH\UsageSummary\UsageSummary\obj\x86\Debug\UsageSummary.pdb

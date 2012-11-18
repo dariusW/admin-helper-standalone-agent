@@ -962,3 +962,273 @@
 16:15:11,893  INFO ReportResponce:28 - {"records_stored":"1"}
 16:15:12,045  INFO MemoryMonitor:29 - {"records_stored":"1"}
 16:15:12,113  INFO SpeedFanMonitor:45 - {"records_stored":"1"}
+00:56:54,731  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1050169: startup date [Sun Nov 18 00:56:54 CET 2012]; root of context hierarchy
+00:56:55,000  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+00:56:56,270  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@126f75b: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+00:56:56,676  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+00:56:56,724  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+00:56:56,827  INFO DefaultListableBeanFactory:433 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@126f75b: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+00:56:56,827  INFO ThreadPoolTaskScheduler:150 - Shutting down ExecutorService 'taskScheduler'
+00:56:56,828  INFO ThreadPoolTaskExecutor:150 - Shutting down ExecutorService
+00:57:49,721  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e86d0: startup date [Sun Nov 18 00:57:49 CET 2012]; root of context hierarchy
+00:57:49,820  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+00:57:50,294  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d81784: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+00:57:50,484  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+00:57:50,507  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+00:57:50,552  INFO DefaultListableBeanFactory:433 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d81784: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+00:57:50,552  INFO ThreadPoolTaskScheduler:150 - Shutting down ExecutorService 'taskScheduler'
+00:57:50,553  INFO ThreadPoolTaskExecutor:150 - Shutting down ExecutorService
+00:58:04,517  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a340e: startup date [Sun Nov 18 00:58:04 CET 2012]; root of context hierarchy
+00:58:04,614  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+00:58:05,102  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d81784: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+00:58:05,292  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+00:58:05,316  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+00:58:08,488  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196686,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:10,665  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196688,"data":{"cpuPercentUsage":"30,49864"},"device":"myDevice"}]}
+00:58:12,649  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196690,"data":{"cpuPercentUsage":"55,43083"},"device":"myDevice"}]}
+00:58:14,654  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196692,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:16,540  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196694,"data":{"cpuPercentUsage":"31,17996"},"device":"myDevice"}]}
+00:58:18,457  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196696,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:58:20,273  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196698,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:22,122  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196700,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:23,953  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196702,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:24,572  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196703,"data":{"FreePhysicalMemory":"858320","FreeSpaceInPagingFiles":"2470440","FreeVirtualMemory":"2943380","NumberOfProcesses":"95","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+00:58:26,504  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196704,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:28,339  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196706,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:30,277  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196708,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:32,145  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196710,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:58:33,946  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196712,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:35,765  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196713,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:37,688  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196715,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:39,597  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196717,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:58:41,523  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196719,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:43,453  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196721,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:58:43,646  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196723,"data":{"FreePhysicalMemory":"858252","FreeSpaceInPagingFiles":"2470724","FreeVirtualMemory":"2944604","NumberOfProcesses":"95","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+00:58:45,564  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196723,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:47,505  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196725,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:49,347  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196727,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:58:51,431  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196729,"data":{"cpuPercentUsage":"22,77622"},"device":"myDevice"}]}
+00:58:53,344  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196731,"data":{"cpuPercentUsage":"15,05379"},"device":"myDevice"}]}
+00:58:55,184  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196733,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:57,099  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196735,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:58:58,898  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196737,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:59:00,708  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196738,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:59:02,524  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196740,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+00:59:02,630  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_space","time":1353196742,"data":{"drive":"C:","free_space":"20135337984","total_space":"107374178304","usable_space":"20135337984"},"device":"myDevice"},{"table":"hdd_space","time":1353196742,"data":{"drive":"D:","free_space":"149862801408","total_space":"212590391296","usable_space":"149862801408"},"device":"myDevice"},{"table":"hdd_space","time":1353196742,"data":{"drive":"E:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"},{"table":"hdd_space","time":1353196742,"data":{"drive":"F:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"},{"table":"hdd_space","time":1353196742,"data":{"drive":"G:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"}]}
+00:59:02,838  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196742,"data":{"FreePhysicalMemory":"861716","FreeSpaceInPagingFiles":"2468592","FreeVirtualMemory":"2943976","NumberOfProcesses":"94","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+00:59:04,729  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196742,"data":{"cpuPercentUsage":"61,76669"},"device":"myDevice"}]}
+00:59:06,647  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196744,"data":{"cpuPercentUsage":"22,77622"},"device":"myDevice"}]}
+00:59:08,629  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196746,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:59:10,454  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196748,"data":{"cpuPercentUsage":"23,53327"},"device":"myDevice"}]}
+00:59:12,305  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196750,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:14,213  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196752,"data":{"cpuPercentUsage":"38,22091"},"device":"myDevice"}]}
+00:59:16,042  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196754,"data":{"cpuPercentUsage":"29,8035"},"device":"myDevice"}]}
+00:59:17,886  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196756,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:19,686  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196757,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:21,593  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196759,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:59:21,738  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196761,"data":{"FreePhysicalMemory":"867828","FreeSpaceInPagingFiles":"2467732","FreeVirtualMemory":"2953260","NumberOfProcesses":"92","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+00:59:23,557  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196761,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:59:25,490  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196763,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:59:27,485  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196765,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:29,311  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196767,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:31,167  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196769,"data":{"cpuPercentUsage":"15,05371"},"device":"myDevice"}]}
+00:59:32,989  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196771,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:34,906  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196772,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:59:36,698  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196774,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:59:38,518  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196776,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+00:59:40,329  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196778,"data":{"cpuPercentUsage":"15,05371"},"device":"myDevice"}]}
+00:59:40,476  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196780,"data":{"FreePhysicalMemory":"866540","FreeSpaceInPagingFiles":"2467992","FreeVirtualMemory":"2952068","NumberOfProcesses":"92","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+00:59:42,379  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196780,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:44,198  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196782,"data":{"cpuPercentUsage":"10,00453"},"device":"myDevice"}]}
+00:59:46,133  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196784,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:47,950  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196786,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:49,762  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196787,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+00:59:51,695  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196789,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+00:59:53,724  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196791,"data":{"cpuPercentUsage":"41,68519"},"device":"myDevice"}]}
+00:59:55,736  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196793,"data":{"cpuPercentUsage":"69,41334"},"device":"myDevice"}]}
+00:59:57,594  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196795,"data":{"cpuPercentUsage":"15,05379"},"device":"myDevice"}]}
+00:59:59,739  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196797,"data":{"cpuPercentUsage":"50,86865"},"device":"myDevice"}]}
+00:59:59,845  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_space","time":1353196799,"data":{"drive":"C:","free_space":"20134723584","total_space":"107374178304","usable_space":"20134723584"},"device":"myDevice"},{"table":"hdd_space","time":1353196799,"data":{"drive":"D:","free_space":"149862801408","total_space":"212590391296","usable_space":"149862801408"},"device":"myDevice"},{"table":"hdd_space","time":1353196799,"data":{"drive":"E:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"},{"table":"hdd_space","time":1353196799,"data":{"drive":"F:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"},{"table":"hdd_space","time":1353196799,"data":{"drive":"G:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"}]}
+01:00:00,005  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196799,"data":{"FreePhysicalMemory":"891340","FreeSpaceInPagingFiles":"2468368","FreeVirtualMemory":"2995512","NumberOfProcesses":"90","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+01:00:02,517  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196800,"data":{"cpuPercentUsage":"53,66568"},"device":"myDevice"}]}
+01:00:05,406  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196802,"data":{"cpuPercentUsage":"69,41331"},"device":"myDevice"}]}
+01:00:07,450  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196805,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+01:00:09,747  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196807,"data":{"cpuPercentUsage":"54,11996"},"device":"myDevice"}]}
+01:00:11,964  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196809,"data":{"cpuPercentUsage":"92,7781"},"device":"myDevice"}]}
+01:00:13,962  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196811,"data":{"cpuPercentUsage":"100"},"device":"myDevice"}]}
+01:00:16,109  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196813,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+01:00:17,945  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196816,"data":{"cpuPercentUsage":"54,11996"},"device":"myDevice"}]}
+01:00:19,791  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196817,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+01:00:21,630  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196819,"data":{"cpuPercentUsage":"62,85898"},"device":"myDevice"}]}
+01:00:21,788  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196821,"data":{"FreePhysicalMemory":"1005540","FreeSpaceInPagingFiles":"2470288","FreeVirtualMemory":"3180780","NumberOfProcesses":"87","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+01:00:23,615  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196821,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+01:00:25,448  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196823,"data":{"cpuPercentUsage":"45,9433"},"device":"myDevice"}]}
+01:00:27,382  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196825,"data":{"cpuPercentUsage":"55,43083"},"device":"myDevice"}]}
+01:00:29,269  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196827,"data":{"cpuPercentUsage":"45,9434"},"device":"myDevice"}]}
+01:00:31,131  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196829,"data":{"cpuPercentUsage":"54,12001"},"device":"myDevice"}]}
+01:00:32,989  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196831,"data":{"cpuPercentUsage":"69,41331"},"device":"myDevice"}]}
+01:00:35,022  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196832,"data":{"cpuPercentUsage":"100"},"device":"myDevice"}]}
+01:00:37,087  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196835,"data":{"cpuPercentUsage":"84,70667"},"device":"myDevice"}]}
+01:00:38,935  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196837,"data":{"cpuPercentUsage":"61,76659"},"device":"myDevice"}]}
+01:00:40,795  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196838,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+01:00:40,994  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196840,"data":{"FreePhysicalMemory":"991068","FreeSpaceInPagingFiles":"2470448","FreeVirtualMemory":"3176768","NumberOfProcesses":"86","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+01:00:42,873  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196840,"data":{"cpuPercentUsage":"45,9433"},"device":"myDevice"}]}
+01:00:44,766  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196842,"data":{"cpuPercentUsage":"61,76662"},"device":"myDevice"}]}
+01:00:46,674  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196844,"data":{"cpuPercentUsage":"61,38806"},"device":"myDevice"}]}
+01:00:48,520  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353196846,"data":{"cpuPercentUsage":"69,11046"},"device":"myDevice"}]}
+01:01:12,744  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bfbdb0: startup date [Sun Nov 18 01:01:12 CET 2012]; root of context hierarchy
+01:01:12,893  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+01:01:13,514  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@90cb03: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+01:01:13,699  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+01:01:13,722  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+01:01:18,133  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:19,378  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:20,973  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:22,797  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:24,593  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:26,408  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:28,324  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:30,148  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:31,970  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:32,141  INFO MemoryMonitor:28 - {"records_stored":"1"}
+01:01:35,445  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:35,840  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:37,650  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:40,122  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:41,323  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:43,100  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:45,021  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:01:46,832  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+01:17:22,159  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19fcc69: startup date [Sun Nov 18 01:17:22 CET 2012]; root of context hierarchy
+01:17:22,259  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+01:17:22,744  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f01a1e: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+01:17:22,934  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+01:17:22,957  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+01:19:11,736  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bfbdb0: startup date [Sun Nov 18 01:19:11 CET 2012]; root of context hierarchy
+01:19:11,877  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+01:19:12,452  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6cb8: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+01:19:12,636  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+01:19:12,660  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+01:19:15,742  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353197953,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+01:19:17,709  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353197955,"data":{"cpuPercentUsage":"15,05389"},"device":"myDevice"}]}
+01:19:19,583  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353197957,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+01:19:21,657  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353197959,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:24:37,884  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bfbdb0: startup date [Sun Nov 18 02:24:37 CET 2012]; root of context hierarchy
+02:24:37,987  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+02:24:38,459  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d81784: defining beans [client,contextController,hddSpaceMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02:24:38,645  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+02:24:38,668  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+02:24:41,973  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353201879,"data":{"cpuPercentUsage":"15,05389"},"device":"myDevice"}]}
+02:24:43,850  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353201881,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:24:45,722  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353201883,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:24:47,625  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353201885,"data":{"cpuPercentUsage":"15,05389"},"device":"myDevice"}]}
+02:24:49,713  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353201887,"data":{"cpuPercentUsage":"30,49854"},"device":"myDevice"}]}
+02:30:58,465  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1050169: startup date [Sun Nov 18 02:30:58 CET 2012]; root of context hierarchy
+02:30:58,583  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+02:30:59,149  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@142a80d: defining beans [client,contextController,hddSpaceMonitor,hddTempMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02:30:59,373  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+02:30:59,400  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+02:31:02,420  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202260,"data":{"cpuPercentUsage":"77,05995"},"device":"myDevice"}]}
+02:31:04,503  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202262,"data":{"cpuPercentUsage":"53,66573"},"device":"myDevice"}]}
+02:31:06,605  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202264,"data":{"cpuPercentUsage":"100"},"device":"myDevice"}]}
+02:31:08,477  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202266,"data":{"cpuPercentUsage":"55,00231"},"device":"myDevice"}]}
+02:31:10,503  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202268,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:12,541  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202270,"data":{"cpuPercentUsage":"10,00453"},"device":"myDevice"}]}
+02:31:14,442  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202272,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:16,425  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202274,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:18,412  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202276,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:18,644  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202278,"data":{"FreePhysicalMemory":"961180","FreeSpaceInPagingFiles":"2438980","FreeVirtualMemory":"3057616","NumberOfProcesses":"92","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+02:31:20,532  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202278,"data":{"cpuPercentUsage":"15,05389"},"device":"myDevice"}]}
+02:31:22,501  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202280,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:24,572  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202282,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:26,551  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202284,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:28,544  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202286,"data":{"cpuPercentUsage":"22,77622"},"device":"myDevice"}]}
+02:31:30,510  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202288,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:32,488  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202290,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:34,375  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202292,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:36,241  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202294,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:38,122  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202296,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:38,266  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202298,"data":{"FreePhysicalMemory":"961628","FreeSpaceInPagingFiles":"2439000","FreeVirtualMemory":"3058308","NumberOfProcesses":"92","TotalVirtualMemorySize":"6276552","TotalVisibleMemorySize":"3140208"},"device":"myDevice"}]}
+02:31:40,202  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202298,"data":{"cpuPercentUsage":"69,11049"},"device":"myDevice"}]}
+02:31:42,258  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202300,"data":{"cpuPercentUsage":"68,80153"},"device":"myDevice"}]}
+02:31:44,262  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202302,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:46,240  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202304,"data":{"cpuPercentUsage":"7,331368"},"device":"myDevice"}]}
+02:31:48,119  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202306,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:50,116  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202308,"data":{"cpuPercentUsage":"0"},"device":"myDevice"}]}
+02:31:51,998  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202310,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:53,862  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202311,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:55,795  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202313,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:57,751  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"memory","time":1353202315,"data":{"cpuPercentUsage":"7,33146"},"device":"myDevice"}]}
+02:31:57,863  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_space","time":1353202317,"data":{"drive":"C:","free_space":"20132016128","total_space":"107374178304","usable_space":"20132016128"},"device":"myDevice"},{"table":"hdd_space","time":1353202317,"data":{"drive":"D:","free_space":"149862801408","total_space":"212590391296","usable_space":"149862801408"},"device":"myDevice"},{"table":"hdd_space","time":1353202317,"data":{"drive":"E:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"},{"table":"hdd_space","time":1353202317,"data":{"drive":"F:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"},{"table":"hdd_space","time":1353202317,"data":{"drive":"G:","free_space":"0","total_space":"0","usable_space":"0"},"device":"myDevice"}]}
+02:33:16,799  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a340e: startup date [Sun Nov 18 02:33:16 CET 2012]; root of context hierarchy
+02:33:16,936  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+02:33:17,518  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d81784: defining beans [client,contextController,hddSpaceMonitor,hddTempMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02:33:17,716  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+02:33:17,741  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+02:39:07,886  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a340e: startup date [Sun Nov 18 02:39:07 CET 2012]; root of context hierarchy
+02:39:08,062  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+02:39:08,779  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@90cb03: defining beans [client,contextController,hddSpaceMonitor,hddTempMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02:39:08,975  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+02:39:08,998  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+02:39:10,619  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_temp","time":1353202750,"data":{"hddTemp0":"42"},"device":"myDevice"}]}
+02:39:12,789  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"procesor","time":1353202750,"data":{"cpuPercentUsage":"15,05389"},"device":"myDevice"}]}
+02:39:13,301  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_temp","time":1353202752,"data":{"hddTemp0":"42"},"device":"myDevice"}]}
+02:39:15,182  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"procesor","time":1353202753,"data":{"cpuPercentUsage":"22,77622"},"device":"myDevice"}]}
+02:39:15,735  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_temp","time":1353202755,"data":{"hddTemp0":"42"},"device":"myDevice"}]}
+02:39:17,731  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"procesor","time":1353202755,"data":{"cpuPercentUsage":"61,38806"},"device":"myDevice"}]}
+02:39:18,245  INFO Client:101 - POST REQUEST: http://tokarski.biz/medyczne/store?key=null CONTENT: {"list":[{"table":"hdd_temp","time":1353202757,"data":{"hddTemp0":"42"},"device":"myDevice"}]}
+02:40:06,104  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bfbdb0: startup date [Sun Nov 18 02:40:06 CET 2012]; root of context hierarchy
+02:40:06,232  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+02:40:06,795  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e1a408: defining beans [client,contextController,hddSpaceMonitor,hddTempMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02:40:07,035  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+02:40:07,060  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+02:40:10,757  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:14,747  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:14,830  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:16,594  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:18,630  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:20,663  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:22,805  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:24,821  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:26,845  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:27,230  INFO HddTempMonitor:28 - {"records_stored":"1"}
+02:40:27,433  INFO MemoryMonitor:28 - {"records_stored":"1"}
+02:40:29,540  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:31,820  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:33,895  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:35,975  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:38,208  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:40,327  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:42,472  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:44,555  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:48,563  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:48,893  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:49,159  INFO HddTempMonitor:28 - {"records_stored":"1"}
+02:40:49,304  INFO MemoryMonitor:28 - {"records_stored":"1"}
+02:40:51,514  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:53,732  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:55,895  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:40:58,020  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:41:00,239  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:41:02,602  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:41:04,861  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:48:00,030  INFO ClassPathXmlApplicationContext:500 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bfbdb0: startup date [Sun Nov 18 02:48:00 CET 2012]; root of context hierarchy
+02:48:00,125  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [config/application.xml]
+02:48:00,644  INFO DefaultListableBeanFactory:581 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d81784: defining beans [client,contextController,hddSpaceMonitor,hddTempMonitor,memoryMonitor,procesorMonitor,speedFanMonitor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,taskExecutor,taskScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+02:48:00,904  INFO ThreadPoolTaskExecutor:115 - Initializing ExecutorService 
+02:48:00,940  INFO ThreadPoolTaskScheduler:115 - Initializing ExecutorService  'taskScheduler'
+02:48:03,547  INFO ReportResponce:27 - {"records_stored":"5"}
+02:48:03,607  INFO HddTempMonitor:28 - {"records_stored":"1"}
+02:48:03,793  INFO MemoryMonitor:28 - {"records_stored":"1"}
+02:48:05,760  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:48:05,915  INFO ReportResponce:27 - {"records_stored":"5"}
+02:48:06,350  INFO HddTempMonitor:28 - {"records_stored":"1"}
+02:48:06,482  INFO MemoryMonitor:28 - {"records_stored":"1"}
+02:48:08,413  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:48:08,582  INFO ReportResponce:27 - {"records_stored":"5"}
+02:48:08,894  INFO HddTempMonitor:28 - {"records_stored":"1"}
+02:48:09,020  INFO MemoryMonitor:28 - {"records_stored":"1"}
+02:48:10,999  INFO ProcesorMonitor:28 - {"records_stored":"1"}
+02:48:11,191  INFO ReportResponce:27 - {"records_stored":"5"}
+02:48:11,510  INFO HddTempMonitor:28 - {"records_stored":"1"}
+02:48:11,654  INFO MemoryMonitor:28 - {"records_stored":"1"}

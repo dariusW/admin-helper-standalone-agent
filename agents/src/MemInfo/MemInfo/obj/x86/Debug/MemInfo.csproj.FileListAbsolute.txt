@@ -1,0 +1,5 @@
+c:\users\darek\documents\visual studio 2010\AH\MemInfo\MemInfo\bin\Debug\MemInfo.exe
+c:\users\darek\documents\visual studio 2010\AH\MemInfo\MemInfo\bin\Debug\MemInfo.pdb
+c:\users\darek\documents\visual studio 2010\AH\MemInfo\MemInfo\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\darek\documents\visual studio 2010\AH\MemInfo\MemInfo\obj\x86\Debug\MemInfo.exe
+c:\users\darek\documents\visual studio 2010\AH\MemInfo\MemInfo\obj\x86\Debug\MemInfo.pdb
